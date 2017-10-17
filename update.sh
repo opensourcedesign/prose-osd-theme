@@ -3,10 +3,10 @@
 if [[ $1 != "" ]]; then
 
     echo "Copying images"
-    cp img/* $1/img/
+    cp -r img/* $1/img/
 
     echo "Copying configs"
-    cp translation/application.yaml $1/translation/
+    cp translations/application.yaml $1/translations/
 
 else
     echo "Please specify where the prose repo is"
